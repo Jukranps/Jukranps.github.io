@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Details | Group Assignment 2</title>
+	<link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+
+<body class="details-page">
+    <div class="dashboard-container">
+        <button id="back-to-map">
+            ← Back
+        </button>
+
+        <div class="chart-section">
+            <h2>Sales Calendar</h2>
+            <div class="year-controls">
+                <label for="year-selector">Select Year:</label>
+                <select id="year-selector">
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="all">All Years (Aggregate View)</option>
+                </select>
+            </div>
+            <div style="display: flex; justify-content: center; gap: 10px; margin-bottom: 8px;">
+                <span id="year-display">...</span>
+            </div>
+            <div id="calendar" class="responsive-svg-container"></div>
+        </div>
+        
+        <!-- Tooltip -->
+	    <div id="tooltip" class="tooltip"></div>
+
+        <div class="chart-section">
+            <h2>Shipping Flow</h2>
+            <div id="sankey-year-notice" class="all-years-notice"></div>
+            <div id="legend" class="responsive-svg-container"></div>
+            <div id="sankey" class="responsive-svg-container"></div>
+        </div>
+    </div>
+
+	<!-- Load your scripts here -->
+	<script src="https://d3js.org/d3.v7.min.js"></script>
+	<script src="https://d3js.org/d3-collection.v1.min.js"></script>
+	<script src="https://unpkg.com/d3-sankey@0.12.3/dist/d3-sankey.min.js"></script>
+
+	<script type=module src="../js/calendar.js"></script>
+	<script type=module src="../js/sankey.js"></script>
+</body>
+
+</html>

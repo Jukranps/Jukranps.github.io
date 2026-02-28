@@ -1,0 +1,228 @@
+body {
+  font-family: 'Arial', sans-serif; 
+}
+
+h1 {
+  text-align: center;
+}
+
+.responsive-svg-container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  max-width: 1200px;
+  /*display: flex;*/
+  flex-wrap: wrap;
+}
+
+#provider-filter{
+  background:white; 
+  padding:10px; 
+  border-radius:8px;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+#world_map {
+  display: block;
+  margin: 0 auto;
+}
+
+#world_map path {
+  vector-effect: non-scaling-stroke;
+}
+
+.tooltip {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+  padding: 6px 8px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 12px;
+  font-family: sans-serif;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.swatches-item {
+  float: left;
+  width: 16%;
+  break-inside: avoid;
+  display: flex;
+  align-items: center;
+  padding-bottom: 1px;
+  position: relative;
+}
+
+.swatches-swatch {
+  width: 15px;
+  height: 15px;
+  margin: 0 0.5em 0 0;
+}
+
+#back-to-map {
+  margin: 10px; 
+  padding: 8px 12px; 
+  font-size: 14px;
+}
+
+#sankey-container{
+  width: 100%; 
+  height: 700px;
+}
+
+/*.swatche-label {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: calc(100% - 15px - 0.5em);
+}*/
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.page-grid {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  gap: 16px;
+  align-items: start;
+  padding: 8px 12px;
+}
+
+.left-col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.center-col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.filters label {
+  margin: 0;
+  white-space: nowrap;
+}
+
+.filters select { width: auto; }
+
+.center-col #map,
+.center-col #bar,
+.center-col #form {
+  width: 90%;
+  max-width: 900px;
+  align-self: center;
+}
+
+.center-col #map { height: auto; }
+
+.center-col #map svg,
+.center-col #bar svg {
+  width: 100%;
+  height: auto;
+}
+
+#form p {
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+}
+
+.details-page .page-grid {
+  grid-template-columns: 1fr 5fr 1fr;
+  height: 100vh;
+}
+
+.details-page .left-col {
+  align-items: center;
+  justify-content: center;
+}
+
+.details-page .center-cell {
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.details-page .dashboard-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.details-page .viz-section {
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+}
+
+.details-page .chart-section {
+  margin-top: 3em;
+}
+
+.details-page .chart-section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.details-page h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.details-page .responsive-svg-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.details-page #back-to-map {
+  border-radius: 32px;
+  font-size: large;
+  position: fixed;
+  top: 0.25rem;
+  left: 0.25rem;
+  z-index: 1000;
+}
+
+/* Details page specific controls moved from details.html */
+.details-page .year-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 15px;
+  padding: 10px;
+  background: #f5f5f5;
+  border-radius: 8px;
+}
+
+.details-page .year-controls label {
+  font-weight: bold;
+  color: #333;
+}
+
+.details-page .year-controls select {
+  padding: 5px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.details-page .all-years-notice {
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 10px;
+}
