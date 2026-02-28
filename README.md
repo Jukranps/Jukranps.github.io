@@ -14,7 +14,7 @@ All the visualizations provide tooltips when hovering over the graph elements.
 
 ### Hosting and Deployment
 
-This project's source code is available [here].
+This project's source code is available [here](https://github.com/Jukranps/InfoVis-Assignment).
 
 The live visualization can be seen [here].
 
