@@ -16,6 +16,6 @@ All the visualizations provide tooltips when hovering over the graph elements.
 
 This project's source code is available [here](https://github.com/Jukranps/InfoVis-Assignment).
 
-The live visualization can be seen [here].
+The live visualization can be seen [here](https://jukranps.github.io/).
 
 If the live visualization is not working, please open this folder in VSCode and run the [LiveServer] plugin (be careful with https issues! use http if it does not work out of the box).
