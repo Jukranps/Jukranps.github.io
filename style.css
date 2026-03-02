@@ -10,7 +10,7 @@ h1 {
   margin-right: auto;
   margin-left: auto;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1600px;
   /*display: flex;*/
   flex-wrap: wrap;
 }
@@ -118,8 +118,8 @@ html, body {
 .center-col #map,
 .center-col #bar,
 .center-col #form {
-  width: 90%;
-  max-width: 900px;
+  width: 100%;
+  max-width: none;
   align-self: center;
 }
 
