@@ -4,6 +4,8 @@ body {
 
 h1 {
   text-align: center;
+  font-size:26px;
+  margin:16px 0;
 }
 
 .responsive-svg-container {
@@ -15,11 +17,12 @@ h1 {
   flex-wrap: wrap;
 }
 
-#provider-filter{
-  background:white; 
-  padding:12px 18px; 
-  border-radius:10px;
-  font-size:16px;
+.filters-inline {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
 }
 
 #map {
