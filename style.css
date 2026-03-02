@@ -251,6 +251,11 @@ html, body {
   margin-top: 10px;
 }
 
+.details-page #year-display {
+  display: block;
+  margin-bottom: 16px;
+}
+
 .details-page #calendar svg {
   width: 100%;
   height: auto;
