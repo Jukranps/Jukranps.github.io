@@ -223,7 +223,7 @@
   
   const createHeatMap = (data, colors, yearMode) => {
     const cellSize = 22;
-    const margin = {top: 28, right: 20, bottom: 30, left: 40};
+    const margin = {top: 20, right: 20, bottom: 30, left: 40};
     const width = (cellSize * 53) + margin.left + margin.right; 
     const height = (cellSize * 7) + margin.top + margin.bottom;
   
