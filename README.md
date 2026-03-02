@@ -1,5 +1,7 @@
 # InfoVis Assignment 2
 
+Information Visualization Assignment using JavaScript's D3 library.
+
 In this assignment, multiple visualizations were implemented from an [Online Sales Dataset](https://www.kaggle.com/datasets/yusufdelikkaya/online-sales-dataset).
 
 In order to map an interactive choropleth map, a [geoJson dataset](https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson) was also required.
