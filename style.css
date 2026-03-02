@@ -4,8 +4,8 @@ body {
 
 h1 {
   text-align: center;
-  font-size:26px;
-  margin:16px 0;
+  font-size: 32px;
+  margin: 16px 0;
 }
 
 .responsive-svg-container {
@@ -17,12 +17,23 @@ h1 {
   flex-wrap: wrap;
 }
 
-.filters-inline {
+.map-row {
   display: flex;
-  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.map-row .filters {
+  display: flex;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 10px;
+  gap: 8px;
+}
+
+#provider-filter{
+  background:white; 
+  padding:12px 18px; 
+  border-radius:10px;
+  font-size:16px;
 }
 
 #map {
@@ -44,13 +55,14 @@ h1 {
   opacity: 0;
   position: absolute;
   pointer-events: none;
-  padding: 6px 8px;
+  padding: 10px 14px;
   background: white;
   border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 12px;
+  border-radius: 6px;
+  font-size: 14px;
   font-family: sans-serif;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+  max-width: 260px;
 }
 
 .swatches-item {
@@ -190,9 +202,17 @@ html, body {
   justify-content: center;
 }
 
+.calendar-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
 .details-page #back-to-map {
   border-radius: 32px;
   font-size: 18px;
+  padding: 8px 16px;
   position: fixed;
   top: 0.25rem;
   left: 1rem;
